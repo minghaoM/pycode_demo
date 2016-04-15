@@ -15,7 +15,7 @@ yield机制：
     python -m timeit -n 1000 "a=[i for i in range(1000)]"
     python -m timeit -n 1000 "a=(i for i in range(1000))"
     python -m timeit -n 1000 "a=(i for i in xrange(1000))"
-    使用sys.sizeof对比range(1000)和xrange(1000)的空间大小
+    使用sys.getsizeof对比range(1000)和xrange(1000)的空间大小
 """
 
 
@@ -76,7 +76,7 @@ def demo3():
 if __name__ == "__main__":
     print("### test")
     # print("### demo1")
-    # demo1()
+    #demo1()
     # print("### demo2")
-    # demo2()
-    demo3()
+    demo2()
+    #demo3()
